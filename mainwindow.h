@@ -18,17 +18,6 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void on_HostAdd_clicked();
-
-    void on_HostSubtract_clicked();
-
-    void on_ResetButton_clicked();
-
-    void on_ConnectorAdd_clicked();
-
-    void on_ConnectorSubtract_clicked();
-
 private:
     Ui::MainWindow *ui;
 
@@ -36,6 +25,12 @@ private:
     int connectorScore = 25;
     int hostDiscounts = 0;
     int connectorDiscounts = 0;
+
+    void on_HostAdd_clicked();
+    void on_HostSubtract_clicked();
+    void on_ResetButton_clicked();
+    void on_ConnectorAdd_clicked();
+    void on_ConnectorSubtract_clicked();
 
     void updateLabels();
 };
